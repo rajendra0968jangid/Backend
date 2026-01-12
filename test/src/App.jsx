@@ -1,24 +1,11 @@
-// variable
-// var let const
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-// let firstName = "hello";
-// console.log(firstName);
-
-// let age = 20;
-// console.log(age);
-
-// const age = 20;
-// age = 22;
-// console.log(age);
-
-// const arr = [20,30,40];
-// arr[0] = 100;
-// console.log(arr[2])
-
-const obj = {
-  catalogFeedType: "catalog_listing_page",
-  enable: false,
-  catalogs: [
+function App() {
+  const [count, setCount] = useState(0)
+  const newArray =   [
     {
       id: 163469534,
       hero_pid: 499811662,
@@ -247,13 +234,12 @@ const obj = {
       hero_product_name: "D_S_PURPLE",
       high_asp_enabled: false,
     },
-  ],
-  widget_groups: [],
-  header_widget_groups: [],
-  subscribed: false,
-  session_id: "ctx_1_uid_-1_clpid_4570_t_1767768901824",
-  count: 10000,
-};
-console.log(obj.catalogs[0].image);
+  ]
+  return (
+    <>
+     <img src={newArray[0]["image"]} alt="" />
+    </>
+  )
+}
 
-
+export default App
