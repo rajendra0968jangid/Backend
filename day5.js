@@ -66,9 +66,8 @@
 // console.log(!!"false" == !!"true")
 
 
-console.log(false || true && false || true && !false && false || !true);
- 
-
+// console.log(false || true && false || true && !false && false || !true);
+ console.log("bapple" > "banana")
 
 
 
