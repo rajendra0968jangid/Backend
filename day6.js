@@ -114,6 +114,7 @@ if(per < 60){
 let check = 10;
 switch(check){
     default:
+        
         console.log("c")
     case 10:
         console.log("a")
