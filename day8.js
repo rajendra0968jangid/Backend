@@ -25,4 +25,14 @@
 let arr = [[{week:"mon"}],[{week:"tue"}],[{week:"wed"}],[{week:"thu"}]];
 console.log(arr[0][0].week);
 
-let obj = {months:[{2026:["jan","feb","march","april"]}]}
+let obj = {message:"hello",months:[{2026:["jan","feb","march","april"]}]}
+
+
+console.log(obj.message)
+
+
+let num1 = "10";
+let num2 = "20";
+let result = num1;
+result += num2
+console.log(result); //10 20

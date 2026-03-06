@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rajendra</title>
+</head>
+
+<body>
+    <div id="demo">
+
+    </div>
+    <button onclick="fun()">click</button>
+    <script>
+        async function fun(){
+            const url = "http://localhost:4000";
+            const apiResponse = await fetch(url) //argument
+            const jsonResponse = await apiResponse.json();
+            console.log(jsonResponse)
+            console.log(jsonResponse["data"]["name"])
+            console.log(jsonResponse.data.name)
+            console.log(jsonResponse["data"]["email"])
+            console.log(jsonResponse.data.email)
+            alert(jsonResponse.message)
+            document.getElementById("demo").innerHTML = `<h1>${jsonResponse.data.name}</h1>`
+            document.getElementById("demo").innerHTML += `<h1>${jsonResponse.data.email}</h1>`
+        }
+    </script>
+</body>
+
+</html>
