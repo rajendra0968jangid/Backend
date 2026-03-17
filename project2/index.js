@@ -13,7 +13,7 @@ app.get("/",(req,res)=>{
 })
 //import mongoose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://rajendra0968jangid:Rajendra0968@cluster0.wyu84.mongodb.net/myproject")
+mongoose.connect("mongodb+srv://jeet-zen108:Rajendra0968@jeet.cxdfy5g.mongodb.net/myproject?appName=Jeet")
 mongoose.connection.on('connected', () => console.log('connected'));
 
 //collection-> table
